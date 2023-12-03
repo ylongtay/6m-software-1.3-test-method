@@ -17,10 +17,17 @@ let booksObj = {};
 
 function convert(keyArr, valueArr){
     
+    // let keyArr = bookIdArr;
+    // let valueArr = bookTitle;
+    let result = {}
+    for (let i = 0; i < keyArr.length; i++) {
+        result[keyArr[i]] = valueArr[i]; //Special case where
+    }
+    return result
     // Add code here
     /*
         Tips:
-        - Step 1: Create a local scoped object literal.
+        - Step 1: Create a local scoped object literal. - Try not use global object, long run cause mutation?
         - Step 2: Define a for-loop that run based on keyArr's length.
         - Step 3: Within the for-loop, add the key and value to the local scoped object.
         - Step 4: Write a return statement to return the object literal after the for-loop code block.
